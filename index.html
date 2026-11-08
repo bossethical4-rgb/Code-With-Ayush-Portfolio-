@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Basic SEO and responsive settings -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Code With Ayush — Coding Instructor, Web Developer and Cybersecurity Learner.">
+  <meta name="theme-color" content="#080808">
+  <title>Code With Ayush | Developer • Educator • Cybersecurity Learner</title>
+
+  <!-- Google Fonts: इंटरनेट उपलब्ध होने पर ये fonts load होंगे -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Main stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Decorative background grid and glow effects -->
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="grid-overlay" aria-hidden="true"></div>
+
+  <!-- ==================== HEADER / NAVIGATION ==================== -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Code With Ayush home">
+        <span class="brand-mark">&lt;/&gt;</span>
+        <span>CODE WITH <b>AYUSH</b><small>LEARN · BUILD · INNOVATE</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#skills" data-i18n="navSkills">Skills</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#journey" data-i18n="navJourney">Journey</a>
+        <a href="#services" data-i18n="navServices">Services</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+        <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">हिंदी</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==================== HOME / HERO ==================== -->
+    <section class="hero section" id="home">
+      <div class="container hero-layout">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="status-dot"></span><span data-i18n="heroEyebrow">AVAILABLE FOR LEARNING & COLLABORATION</span></p>
+          <p class="hello" data-i18n="hello">Hello, I'm</p>
+          <h1>Ayush<span class="gold-dot">.</span></h1>
+          <div class="role-line">
+            <span class="role-prefix" data-i18n="rolePrefix">I'M A</span>
+            <span class="typing-text" id="typingText">Web Developer</span><span class="typing-cursor">|</span>
+          </div>
+          <h2 data-i18n="heroHeadline">Turning ideas into <span>digital experiences.</span></h2>
+          <p class="hero-description" data-i18n="heroDescription">
+            I’m passionate about programming, web development, computer education and cybersecurity. I enjoy learning new technologies and building meaningful digital solutions.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects" data-i18n="exploreWork">Explore My Work <span>↗</span></a>
+            <!-- अपना Resume assets/Ayush-Resume.pdf नाम से रखें -->
+            <a class="button button-ghost" href="assets/Ayush-Resume.pdf" download data-i18n="downloadResume">Download Resume ↓</a>
+          </div>
+          <div class="hero-social">
+            <span data-i18n="findMe">FIND ME ON</span>
+            <!-- नीचे # को अपने असली social profile URL से बदलें -->
+            <a href="https://github.com/bossethical4-rgb" aria-label="GitHub profile" class="social-link" target="_blank">GH</a>
+            <a href="https://www.instagram.com/ayushcode_s?xtok=MTQyOTN1N2RxcnJ6ZQ==" aria-label="Instagram profile" class="social-link" target="_blank">IG</a>
+            <a href="https://youtube.com/@ayushcode_s?si=JFPaQhoCY3GBxX-7" aria-label="YouTube channel" class="social-link" target="_blank" rel="noopener">YT</a>
+            <a href="mailto:codewithayush.com@gmail.com" aria-label="Email Ayush" class="social-link">@</a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="profile-frame">
+            <!-- अपनी फोटो assets/profile.jpg में रखें; फिर नीचे src में यही path रहने दें -->
+            <img src="assets/profile.jpg" alt="Ayush profile photo" class="profile-photo"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='grid';">
+            <!-- फोटो न होने पर यह initials placeholder दिखेगा -->
+            <div class="profile-fallback">A<span>.</span></div>
+            <div class="photo-corner corner-tl"></div><div class="photo-corner corner-br"></div>
+          </div>
+          <div class="floating-code code-top"><span>01</span> &lt;build /&gt;</div>
+          <div class="floating-code code-bottom"><span>02</span> secure();</div>
+          <div class="visual-caption"><span class="caption-line"></span><span data-i18n="visualCaption">CURIOUS MIND. BUILDER'S SPIRIT.</span></div>
+        </div>
+      </div>
+      <div class="hero-bottom container">
+        <span>01 / 07</span><span class="scroll-note" data-i18n="scroll">SCROLL TO EXPLORE ↓</span><span>INDIA · 2026</span>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT ==================== -->
+    <section class="section section-border" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">01 — <span data-i18n="aboutEyebrow">GET TO KNOW ME</span></p>
+          <h2 data-i18n="aboutTitle">A little about <span>myself.</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-intro reveal">
+            <p class="large-copy" data-i18n="aboutLead">Technology is more than a tool to me — it’s a space to create, teach, explore and keep growing.</p>
+            <p class="muted-copy" data-i18n="aboutText">I’m Ayush, a technology enthusiast focused on programming, web development and computer education. I enjoy breaking down concepts, building practical projects and exploring how digital systems work. I’m also learning cybersecurity step by step, with a focus on strong fundamentals and responsible practice.</p>
+          </div>
+          <div class="about-facts reveal">
+            <div class="fact-card"><span class="fact-number">01</span><div><h3 data-i18n="factOneTitle">Build with purpose</h3><p data-i18n="factOneText">Creating useful, accessible digital experiences.</p></div></div>
+            <div class="fact-card"><span class="fact-number">02</span><div><h3 data-i18n="factTwoTitle">Learn by doing</h3><p data-i18n="factTwoText">Turning concepts into hands-on projects.</p></div></div>
+            <div class="fact-card"><span class="fact-number">03</span><div><h3 data-i18n="factThreeTitle">Share knowledge</h3><p data-i18n="factThreeText">Making computer and coding concepts easier to understand.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS ==================== -->
+    <section class="section section-border" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">02 — <span data-i18n="skillsEyebrow">TOOLS & TECHNOLOGIES</span></p>
+          <h2 data-i18n="skillsTitle">Skills I'm <span>building.</span></h2>
+          <p class="section-subtitle" data-i18n="skillsSubtitle">A growing toolkit — learning, practising and improving every day.</p>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <div class="skill-card-top"><span class="skill-icon">&lt;/&gt;</span><span class="skill-index">01</span></div>
+            <h3 data-i18n="programming">Programming</h3>
+            <p data-i18n="programmingText">Core concepts and problem-solving foundations.</p>
+            <div class="skill-tags"><span>C</span><span>C++</span><span>Python</span><span>JavaScript</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card-top"><span class="skill-icon">◈</span><span class="skill-index">02</span></div>
+            <h3 data-i18n="webDevelopment">Web Development</h3>
+            <p data-i18n="webText">Building responsive and user-friendly web experiences.</p>
+            <div class="skill-tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive UI</span></div>
+          </article>
+          <article class="skill-card reveal">
+            <div class="skill-card-top"><span class="skill-icon">⌑</span><span class="skill-index">03</span></div>
+            <h3 data-i18n="cybersecurity">Cybersecurity Learning</h3>
+            <p data-i18n="cyberText">Exploring security concepts through ethical, legal practice.</p>
+            <div class="skill-tags"><span>Networking</span><span>Linux</span><span>Web Security</span><span>Ethical Hacking Basics</span><span>Awareness</span></div>
+          </article>
+        </div>
+        <p class="learning-note"><span>✳</span> <span data-i18n="learningNote">These are learning and practice areas, not claims of certification or professional expertise.</span></p>
+      </div>
+    </section>
+
+    <!-- ==================== PROJECTS ==================== -->
+    <section class="section section-border" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">03 — <span data-i18n="projectsEyebrow">SELECTED WORK</span></p>
+          <h2 data-i18n="projectsTitle">Things I've <span>worked on.</span></h2>
+          <p class="section-subtitle" data-i18n="projectsSubtitle">A few projects that reflect my learning and practical approach.</p>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-art art-fee"><span class="art-label">PROJECT / 01</span><div class="mock-window"><div class="mock-dots">● ● ●</div><div class="mock-lines"><i></i><i></i><i></i></div><div class="mock-chart"></div></div><span class="art-symbol">₹</span></div>
+            <div class="project-info"><div class="project-meta"><span>MANAGEMENT SYSTEM</span><span>01</span></div><h3>Student Fee Management System</h3><p data-i18n="feeDescription">A learning project concept for organising student records and fee information.</p><div class="project-footer"><div class="project-tags"><span>C</span><span>Management</span></div><div class="project-actions" data-project-actions="0"></div></div></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-art art-bank"><span class="art-label">PROJECT / 02</span><div class="bank-symbol">▤</div><div class="bank-rings"></div><span class="art-caption">BANKING / SYSTEM</span></div>
+            <div class="project-info"><div class="project-meta"><span>PROGRAMMING PROJECT</span><span>02</span></div><h3>Banking Management System</h3><p data-i18n="bankDescription">A programming project exploring basic banking operations and record handling.</p><div class="project-footer"><div class="project-tags"><span>C</span><span>Programming</span></div><div class="project-actions" data-project-actions="1"></div></div></div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-art art-portfolio"><span class="art-label">PROJECT / 03</span><div class="portfolio-preview"><b>CA.</b><span>DESIGN / DEVELOP / DEPLOY</span><div class="preview-bar"></div><div class="preview-bar short"></div></div></div>
+            <div class="project-info"><div class="project-meta"><span>WEB DEVELOPMENT</span><span>03</span></div><h3>Personal Portfolio Website</h3><p data-i18n="portfolioDescription">A personal space to present skills, projects, learning and contact details.</p><div class="project-footer"><div class="project-tags"><span>HTML</span><span>CSS</span><span>JS</span></div><div class="project-actions" data-project-actions="2"></div></div></div>
+          </article>
+          <article class="project-card project-coming reveal">
+            <div class="project-art art-cyber"><span class="art-label">IN PROGRESS / 04</span><div class="shield">◇</div><span class="cyber-code">010101<br>101010<br>001101</span></div>
+            <div class="project-info"><div class="project-meta"><span>LEARNING LAB</span><span>04</span></div><h3>Cybersecurity Learning Projects</h3><p data-i18n="cyberProjectDescription">Future hands-on projects focused on security fundamentals and safe lab practice.</p><div class="project-footer"><div class="project-tags"><span>Networking</span><span>Linux</span></div><span class="coming-label" data-i18n="comingSoon">COMING SOON</span></div></div>
+          </article>
+        </div>
+        <p class="edit-reminder" data-i18n="projectEditNote">Add your real GitHub repository URLs and project screenshots before publishing.</p>
+      </div>
+    </section>
+
+    <!-- ==================== LEARNING JOURNEY ==================== -->
+    <section class="section section-border" id="journey">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">04 — <span data-i18n="journeyEyebrow">ALWAYS IN PROGRESS</span></p>
+          <h2 data-i18n="journeyTitle">My learning <span>journey.</span></h2>
+          <p class="section-subtitle" data-i18n="journeySubtitle">A roadmap of topics I'm exploring. Every step is a chance to grow.</p>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item reveal"><span class="timeline-number">01</span><div><h3 data-i18n="journeyOne">Programming Fundamentals</h3><p data-i18n="journeyOneText">Logic, syntax and problem-solving.</p></div><span class="timeline-state" data-i18n="ongoing">ONGOING</span></div>
+          <div class="timeline-item reveal"><span class="timeline-number">02</span><div><h3 data-i18n="journeyTwo">Web Development</h3><p data-i18n="journeyTwoText">HTML, CSS, JavaScript and responsive interfaces.</p></div><span class="timeline-state" data-i18n="ongoing">ONGOING</span></div>
+          <div class="timeline-item reveal"><span class="timeline-number">03</span><div><h3 data-i18n="journeyThree">Software Development</h3><p data-i18n="journeyThreeText">Building projects and understanding development workflows.</p></div><span class="timeline-state" data-i18n="exploring">EXPLORING</span></div>
+          <div class="timeline-item reveal"><span class="timeline-number">04</span><div><h3 data-i18n="journeyFour">Computer Networking</h3><p data-i18n="journeyFourText">Learning networks, protocols and internet fundamentals.</p></div><span class="timeline-state" data-i18n="exploring">EXPLORING</span></div>
+          <div class="timeline-item reveal"><span class="timeline-number">05</span><div><h3 data-i18n="journeyFive">Cybersecurity Fundamentals</h3><p data-i18n="journeyFiveText">Security awareness, defensive concepts and ethical labs.</p></div><span class="timeline-state" data-i18n="exploring">EXPLORING</span></div>
+          <div class="timeline-item reveal"><span class="timeline-number">06</span><div><h3 data-i18n="journeySix">Continuous Learning</h3><p data-i18n="journeySixText">Staying curious, practising and sharing knowledge.</p></div><span class="timeline-state">ALWAYS</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES ==================== -->
+    <section class="section section-border" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">05 — <span data-i18n="servicesEyebrow">HOW I CAN HELP</span></p>
+          <h2 data-i18n="servicesTitle">What I can <span>offer.</span></h2>
+        </div>
+        <div class="services-grid">
+          <article class="service-card reveal"><span class="service-number">01</span><span class="service-icon">↗</span><h3 data-i18n="serviceOne">Website Development</h3><p data-i18n="serviceOneText">Clean, responsive website experiences for personal and learning projects.</p></article>
+          <article class="service-card reveal"><span class="service-number">02</span><span class="service-icon">▣</span><h3 data-i18n="serviceTwo">Personal Portfolio Design</h3><p data-i18n="serviceTwoText">A professional online presence to showcase your work and skills.</p></article>
+          <article class="service-card reveal"><span class="service-number">03</span><span class="service-icon">&lt;/&gt;</span><h3 data-i18n="serviceThree">Coding Education</h3><p data-i18n="serviceThreeText">Beginner-friendly guidance in programming and computer concepts.</p></article>
+          <article class="service-card reveal"><span class="service-number">04</span><span class="service-icon">⌘</span><h3 data-i18n="serviceFour">Programming Fundamentals</h3><p data-i18n="serviceFourText">Support with basic logic, syntax and practice exercises.</p></article>
+          <article class="service-card reveal"><span class="service-number">05</span><span class="service-icon">⌨</span><h3 data-i18n="serviceFive">Basic Computer Education</h3><p data-i18n="serviceFiveText">Clear introductions to everyday computer skills and tools.</p></article>
+        </div>
+        <p class="edit-reminder" data-i18n="serviceNote">Update this section to match the services you currently provide.</p>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT ==================== -->
+    <section class="section section-border contact-section" id="contact">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">06 — <span data-i18n="contactEyebrow">LET'S TALK</span></p>
+          <h2 data-i18n="contactTitle">Have a project in <span>mind?</span></h2>
+          <p class="section-subtitle" data-i18n="contactSubtitle">Have a question, idea or learning opportunity? Send a message.</p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-copy reveal">
+            <p class="large-copy" data-i18n="contactLead">Good things start with a conversation.</p>
+            <p class="muted-copy" data-i18n="contactText">I’m open to meaningful conversations about coding, web development, computer education and learning opportunities.</p>
+            <div class="contact-detail"><span class="detail-icon">@</span><div><small data-i18n="emailLabel">EMAIL</small><a href="mailto:YOUR_EMAIL@example.com" id="emailLink">YOUR_EMAIL@example.com</a></div></div>
+            <div class="contact-detail"><span class="detail-icon">⌁</span><div><small data-i18n="socialLabel">SOCIAL LINKS</small><p><a href="#" target="_blank" rel="noopener">GitHub</a> · <a href="#" target="_blank" rel="noopener">Instagram</a> · <a href="#" target="_blank" rel="noopener">WhatsApp</a></p></div></div>
+            <p class="contact-hint" data-i18n="contactHint">Replace the placeholder links with your real profiles.</p>
+          </div>
+
+          <!-- Form opens the visitor's email app; no server/backend is included -->
+          <form class="contact-form reveal" id="contactForm">
+            <div class="form-row">
+              <label><span data-i18n="nameLabel">Your Name</span><input type="text" id="visitorName" name="name" placeholder="Name / नाम" required></label>
+              <label><span data-i18n="visitorEmailLabel">Your Email</span><input type="email" id="visitorEmail" name="email" placeholder="you@example.com" required></label>
+            </div>
+            <label><span data-i18n="subjectLabel">Subject</span><input type="text" id="visitorSubject" name="subject" placeholder="What is this about?" required></label>
+            <label><span data-i18n="messageLabel">Message</span><textarea id="visitorMessage" name="message" rows="5" placeholder="Write your message..." required></textarea></label>
+            <button class="button button-primary form-submit" type="submit"><span data-i18n="sendMessage">Send Message</span> <span>↗</span></button>
+            <p class="form-note" id="formNote" aria-live="polite" data-i18n="formNote">This form uses your device's email app. Add your real email address in script.js.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#home"><span class="brand-mark">&lt;/&gt;</span><span>CODE WITH <b>AYUSH</b><small>LEARN · BUILD · INNOVATE</small></span></a>
+      <p data-i18n="footerRole">Developer · Educator · Cybersecurity Learner</p>
+      <div class="footer-legal"><p>© <span id="year">2026</span> Code With Ayush. <span data-i18n="rights">All Rights Reserved.</span></p><p class="footer-disclaimer" data-i18n="footerDisclaimer">Disclaimer: This portfolio is for educational and informational purposes. / अस्वीकरण: यह पोर्टफोलियो केवल शैक्षिक और जानकारी के उद्देश्य से है।</p></div>
+      <a href="#top" class="back-top" aria-label="Back to top">↑</a>
+    </div>
+  </footer>
+
+  <!-- Floating back-to-top control -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <!-- Main JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
